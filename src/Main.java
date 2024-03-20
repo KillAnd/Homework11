@@ -24,6 +24,18 @@ public class Main {
         }
     }
 
+    public static void deliverTheCard(int deliveryDistance) {
+        if (deliveryDistance <= 20) {
+            System.out.println("Доставка займёт 1 день");
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            System.out.println("Доставка займёт 2 дня");
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            System.out.println("Доставка займет 3 дня");
+        } else {
+            System.out.println("Так далеко заказы не доставляем");
+        }
+    }
+
     public static void main(String[] args) {
 
         //task 1
@@ -35,5 +47,12 @@ public class Main {
         //task 2
         System.out.println("Task 2");
         installTheOs(1, 2024);
+
+        //task 3
+        System.out.println("Task 3");
+        deliverTheCard(61);
+
         }
+
+
     }
